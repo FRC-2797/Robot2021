@@ -47,7 +47,7 @@ public class Drivetrain extends SubsystemBase{
     }
     
     public double getEncoder(){
-        return frontleft.getSelectedSensorPosition();
+        return 1.0;//frontleft.getSelectedSensorPosition();
     }
 
     
@@ -141,4 +141,5 @@ public class Drivetrain extends SubsystemBase{
     public static boolean isFinished(){
         return true;
     }
+
 }

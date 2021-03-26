@@ -114,12 +114,13 @@ public class RobotContainer {
 
     new JoystickButton(xbx, Button.kBumperLeft.value).whileHeld(() -> shooter.revWindow(1)).whenReleased(() -> shooter.windowStop());
 
+    //new JoystickButton(xbx, Button.kX.value).whileHeld(() -> shooter.intake(1)).whenReleased(() -> shooter.intakeStop());
     //new JoystickButton(xbx, Button.kY.value).whenPressed(() -> new TurnToAngleProfiled(90, drivetrain));    
     
     new JoystickButton(xbx, 6)
-        .whenPressed(() -> drivetrain.setMaxOutput(.2))
+        .whenPressed(() -> drivetrain.setMaxOutput(.5))
         .whenReleased(() -> drivetrain.setMaxOutput(1));
-
+    
     new JoystickButton(xbx, Button.kY.value).whileHeld(() -> driveSec.execute());
 
     /*

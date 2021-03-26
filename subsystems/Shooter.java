@@ -36,7 +36,7 @@ public class Shooter extends SubsystemBase{
     }
 
     public void retract(double speed){
-        shooterMotor.set(speed);
+        shooterMotor.set(-speed);
     }
 
     public void intake(double speed){
